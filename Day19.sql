@@ -1,3 +1,4 @@
+#Insurance Company
 
 mysql> CREATE DATABASE INSURANCE;
 Query OK, 1 row affected (0.23 sec)
