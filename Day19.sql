@@ -49,3 +49,13 @@ mysql> select * from participated;
 | 5d       | 5c    |      500 |       240000 |
 +----------+-------+----------+--------------+
 6 rows in set (0.00 sec)
+
+5)Find the total number of people who owned cars that were involved in accidents in 2002.
+
+mysql> select distinct count(participated.driverid) as "Total_no_of_people" from accident,participated where accident.reportno=participated.reportno and accident.date between '2002-01-01' and '2002-12-31';
++--------------------+
+| Total_no_of_people |
++--------------------+
+|                  1 |
++--------------------+
+1 row in set (0.00 sec)
